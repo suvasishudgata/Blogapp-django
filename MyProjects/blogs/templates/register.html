@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="row mt-5 mb-5 shadow">
+
+        <div class="col-lg-6 shadow p-4">
+            <h3>REGISTER</h3>
+            <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input name="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input name="Name" type="name" class="form-control" id="examplenamee" aria-describedby="emailHelp">
+                    <div id="NameHelp" class="form-text">This will be used as your display Name.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input name="Password" type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <!--div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div-->
+                  <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+
+        </div>
+
+        <div class="col-lg-6">
+<img src="https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80" class="img-fluid img-responsive">
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+{% endblock %}
