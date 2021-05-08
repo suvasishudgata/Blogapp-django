@@ -2,6 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
+from django.shortcuts import render, redirect
 
 class LoginView(APIView):
 
@@ -31,13 +32,16 @@ class LoginView(APIView):
             if user_obj:
                 response['status'] = 200
                 response['message'] = 'WELCOME!!'
+
             else:
                 response['message'] = 'Invalid Password'
                 raise Exception('Invalid Password')
+
         except Exception as e:
             print(e)
 
         return Response(response)
+
 
 LoginView = LoginView.as_view()
 
