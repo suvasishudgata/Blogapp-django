@@ -1,6 +1,6 @@
 Steps to run:
 
-1. Clone he code.
+1. Clone the code.
 2. Go inside MyProjects folder
 3. Open cmd
 4. Run python manage.py runserver
